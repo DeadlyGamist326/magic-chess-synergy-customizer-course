@@ -1,0 +1,16 @@
+title: Magic Chess Synergy Customizer
+description: Create your own Magic Chess Synergy.
+template:
+  repo: magic-chess-synergy-customizer-template
+  name: magic-chess-synergy-customizer
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
